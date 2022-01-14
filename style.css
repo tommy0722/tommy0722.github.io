@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,800);
+
+body {
+  background: #A1FF9E;
+  font-family: 'Open Sans';
+  font-size: 1.3em;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+#nav {
+  background: url("http://thumb1.shutterstock.com/display_pic_with_logo/1487123/134611310/stock-vector-colorful-geometric-background-with-triangles-vector-eps-134611310.jpg");
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#nav ul{
+  list-style: none;
+}
+#nav li {
+  display: inline-block;
+  padding: 10px;
+}
+#nav li:hover {
+  background: aquamarine;
+}
+#nav li:hover a{
+  color: black;
+}
+.content {
+  padding-top: 90px;
+}
+.anchor {
+  display: block; /*this is important!*/
+}
+.title {
+  position: relative;
+  display: block;
+  top: -50px;
+  padding: 20px 0;
+  font-size: 1.9em;
+}
+.title:before{
+  font-size: 1.5em;
+  content: "\005B";
+}
+.title:after{
+  font-size: 1.5em;
+  content: "\005D";
+}
+.page-divider {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 500px;
+  height: 100%; 
+  overflow: hidden;
+  background-size: cover;
+}
+.pgd1{background-image: url("http://image.shutterstock.com/display_pic_with_logo/719740/162308759/stock-photo-young-trendy-girl-in-sunglasses-and-a-knitted-hat-sitting-on-a-skateboard-on-the-background-of-a-162308759.jpg");}
+.pgd2{background-image: url("http://image.shutterstock.com/display_pic_with_logo/683038/155224421/stock-photo-group-of-three-young-adults-laughing-and-having-a-good-time-155224421.jpg");}
+.page {
+  min-width: 200px;
+  padding: 50px 100px;
+}
+#page1 {background: LightBlue;}
+#page2 {background: MediumSpringGreen;}
+#page3 {background: SlateGray;}
+
+footer {
+  min-height: 200px;
+  padding: 100px;
+}
+footer p {
+  -webkit-column-count: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-count: 2;
+  -moz-column-gap: 40px;
+  -o-column-count: 2;
+  -o-column-gap: 40px;
+  column-count: 2;
+  column-gap: 40px;
+}
+.card-m{
+  margin: 0px 20px;
+}
+.image{
+  width: 300px;
+  height: 300px;
+}
