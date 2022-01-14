@@ -1,291 +1,191 @@
-<style>
-    /* DEMO STYLES */
-body {
-  max-width: 300px;
-  margin: 1em auto;
-  background: #db3a3d;
-  text-align:center;
-}
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.css' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css' />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="css/jquery.circlify.css" rel="stylesheet" type="text/css" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.circliful.min.js"></script>
+    </header>
 
-/* PROGRESS CIRCLE COMPONENT */
-.circliful {
-    margin:auto;
-    position: relative; 
-}
+<body>
+    <div id="nav" style="width: 100%;">
+        <ul>
+            <li><a href="#about" class="scroller" data-offset="-140">關於我</a></li>
+            <li><a href="#portfolio" class="scroller" data-offset="-139">技能</a></li>
+            <li><a href="#work" class="scroller" data-offset="-139">學經歷/工作經歷</a></li>
+            <li><a href="#contact" class="scroller" data-offset="-139">作品集</a></li>
+            <button onclick="location.href='./login.html'" class="btn btn-primary" style="float: right;">登入</button>
 
-.circle-text, .circle-info, .circle-text-half, .circle-info-half {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    display: inline-block;
-}
-
-.circle-info, .circle-info-half {
-	color: #999;
-}
-
-.circliful .fa {
-	margin: -10px 3px 0 3px;
-	position: relative;
-	bottom: 4px;
-}
-</style>
-
-<div class="well" style="background: #fff;">
-    <h2>Progress Circle</h2>
-    <hr>
-    <div class="row">
-      <div id="progress" data-dimension="200" data-text="65%" data-fontsize="36" data-percent="65" data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2"></div>
+        </ul>
     </div>
-    
-    <br>
-    <a class="btn btn-default" href="https://github.com/pguso/jquery-plugin-circliful" target="_blank">
-        Circliful Docs <i class="glyphicon glyphicon-new-window"></i>
-    </a>
-  </div>
+    <div class="content">
+
+
+        <div class="page" id="page1">
+            <a class="anchor" id="about"></a>
+
+            <div class="title ttl1">關於我</div>
+            <table class="table">
+                <tr>
+                    <td>姓名</td>
+                    <td>何O信</td>
+                </tr>
+                <tr>
+                    <td>學歷</td>
+                    <td>OO大學-OO系(OOO年畢)</td>
+                </tr>
+                <tr>
+                    <td>工作經歷</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>自我簡介</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+
+
+
+        <div class="page" id="page2">
+            <a class="anchor " id="portfolio"></a>
+            <div class="title">技能</div>
+            <div class="container">
+            <div class=" ">
+                <div class="slider responsive ">
+                    <div class="">
+                        <img src="./image/php.jpg" class="image" alt="">
+                        <div id="php" data-dimension="100" data-fontsize="36" data-percent="65" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">php</div>
+                    </div>
+                    <div>
+                        <img src="./image/mysql.jpg" class="image" alt="">
+                        <div id="mysql" data-dimension="100" data-fontsize="36" data-percent="60" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">mysql</div>
+                    </div>
+                    <div>
+                        <img src="./image/laravel.jpg" class="image" alt="">
+                        <div id="laravel" data-dimension="100" data-fontsize="36" data-percent="0"
+                            data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15"
+                            data-animationstep="2">laravel</div>
+                    </div>
+                    <div>
+                        <img src="./image/git.jpg" class="image" alt="">
+                        <div id="git" data-dimension="100" data-fontsize="36" data-percent="80" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">git</div>
+                    </div>
+
+                    <div>
+                        <img src="./image/html.png" class="image" alt="">
+                        <div id="html" data-dimension="100" data-fontsize="36" data-percent="60" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">html</div>
+                    </div>
+                    <div>
+
+                        <img src="./image/css.png" class="image" alt="">
+                        <div id="css" data-dimension="100" data-fontsize="36" data-percent="60" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">css</div>
+                    </div>
+                    <div>
+                        <img src="./image/bootstrap.png" class="image" alt="">
+                        <div id="bootstrap" data-dimension="100" data-fontsize="36" data-percent="60"
+                            data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15"
+                            data-animationstep="2">bootstrap</div>
+                    </div>
+                    <div>
+                        <img src="./image/Javascript.png" class="image" alt="">
+                        <div id="Javascript" data-dimension="100" data-fontsize="36" data-percent="50"
+                            data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15"
+                            data-animationstep="2">Javascript</div>
+                    </div>
+                    <div>
+                        <img src="./image/jquery.jpg" class="image" alt="">
+                        <div id="jquery" data-dimension="100" data-fontsize="36" data-percent="40"
+                            data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15"
+                            data-animationstep="2">jquery</div>
+                    </div>
+                    <div>
+                        <img src="./image/Photoshop.png" class="image" alt="">
+                        <div id="Photoshop" data-dimension="100" data-fontsize="36" data-percent="60"
+                            data-fgcolor="#30B455" data-bgcolor="#eee" data-width="15" data-bordersize="15"
+                            data-animationstep="2">Photoshop</div>
+                    </div>
+                    <div>
+                        <img src="./image/ai.png" class="image" alt="">
+                        <div id="ai" data-dimension="100" data-fontsize="36" data-percent="20" data-fgcolor="#30B455"
+                            data-bgcolor="#eee" data-width="15" data-bordersize="15" data-animationstep="2">ai</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="page" id="page3">
+        <a class="anchor" id="work"></a>
+        <div class="title">學經歷/工作經歷</div>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+            Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+        </p>
+    </div>
+
+    <div class="page" id="page4">
+        <a class="anchor" id="contact"></a>
+        <div class="title">作品集</div>
+        <div class="row">
+            <div class="card col card-m" style="width: 18rem;">
+                <img src="./image/hw_vote.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">投票系統</h5>
+                    <p class="card-text">讓我們遇到問題的時候，可以啟動鄉民的正義幫我們做決定，同時也知道漏洞很多</p>
+                    <a href="#" class="btn btn-primary">點我參觀</a>
+                </div>
+            </div>
+            <div class="card  col card-m" style="width: 18rem;">
+                <img src="./image/hw_calendar.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">萬年曆</h5>
+                    <p class="card-text">第一個php作品</p>
+                    <a href="#" class="btn btn-primary">點我參觀</a>
+                </div>
+            </div>
+            <div class="card  col card-m" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">生產中</h5>
+                    <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, animi? Nihil
+                        possimus maxime, cupiditate, aspernatur nulla iste eius natus tempora eaque itaque vero repellat
+                        unde velit expedita eveniet, asperiores delectus!</p>
+                    <a href="#" class="btn btn-primary">點我參觀</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<footer class="p-3 mb-2 bg-primary text-white" style="text-align: center;">
+    shin個人網站
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+<script src="./js.js"></script>
 <script>
-    $(function() {
-        $('#progress').circliful();
+    $(document).ready(function () {
+        $('#myStat').circliful();
     });
-    
-    
-    //Note -- I removed the respondCanvas function from the circiful library
-    /* PROGRESS CIRCLE COMPONENT */
-    (function ($) {
-    
-        $.fn.circliful = function (options, callback) {
-    
-            var settings = $.extend({
-                // These are the defaults.
-                startdegree: 0,
-                fgcolor: "#556b2f",
-                bgcolor: "#eee",
-                fill: false,
-                width: 15,
-                dimension: 200,
-                fontsize: 15,
-                percent: 50,
-                animationstep: 1.0,
-                iconsize: '20px',
-                iconcolor: '#999',
-                border: 'default',
-                complete: null,
-                bordersize: 10
-            }, options);
-    
-            return this.each(function () {
-    
-                var customSettings = ["fgcolor", "bgcolor", "fill", "width", "dimension", "fontsize", "animationstep", "endPercent", "icon", "iconcolor", "iconsize", "border", "startdegree", "bordersize"];
-    
-                var customSettingsObj = {};
-                var icon = '';
-                var endPercent = 0;
-                var obj = $(this);
-                var fill = false;
-                var text, info;
-    
-                obj.addClass('circliful');
-    
-                checkDataAttributes(obj);
-    
-                if (obj.data('text') != undefined) {
-                    text = obj.data('text');
-    
-                    if (obj.data('icon') != undefined) {
-                        icon = $('<i></i>')
-                            .addClass('fa ' + $(this).data('icon'))
-                            .css({
-                                'color': customSettingsObj.iconcolor,
-                                'font-size': customSettingsObj.iconsize
-                            });
-                    }
-    
-                    if (obj.data('type') != undefined) {
-                        type = $(this).data('type');
-    
-                        if (type == 'half') {
-                            addCircleText(obj, 'circle-text-half', (customSettingsObj.dimension / 1.45));
-                        } else {
-                            addCircleText(obj, 'circle-text', customSettingsObj.dimension);
-                        }
-                    } else {
-                        addCircleText(obj, 'circle-text', customSettingsObj.dimension);
-                    }
-                }
-    
-                if ($(this).data("total") != undefined && $(this).data("part") != undefined) {
-                    var total = $(this).data("total") / 100;
-    
-                    percent = (($(this).data("part") / total) / 100).toFixed(3);
-                    endPercent = ($(this).data("part") / total).toFixed(3)
-                } else {
-                    if ($(this).data("percent") != undefined) {
-                        percent = $(this).data("percent") / 100;
-                        endPercent = $(this).data("percent")
-                    } else {
-                        percent = settings.percent / 100
-                    }
-                }
-    
-                if ($(this).data('info') != undefined) {
-                    info = $(this).data('info');
-    
-                    if ($(this).data('type') != undefined) {
-                        type = $(this).data('type');
-    
-                        if (type == 'half') {
-                            addInfoText(obj, 0.9);
-                        } else {
-                            addInfoText(obj, 1.25);
-                        }
-                    } else {
-                        addInfoText(obj, 1.25);
-                    }
-                }
-    
-                $(this).width(customSettingsObj.dimension + 'px');
-    
-                var canvas = $('<canvas></canvas>').attr({
-                    width: customSettingsObj.dimension,
-                    height: customSettingsObj.dimension
-                }).appendTo($(this)).get(0);
-    
-                var context = canvas.getContext('2d');
-                var container = $(canvas).parent();
-                var x = canvas.width / 2;
-                var y = canvas.height / 2;
-                var degrees = customSettingsObj.percent * 360.0;
-                var radians = degrees * (Math.PI / 180);
-                var radius = canvas.width / 2.5;
-                var startAngle = 2.3 * Math.PI;
-                var endAngle = 0;
-                var counterClockwise = false;
-                var curPerc = customSettingsObj.animationstep === 0.0 ? endPercent : 0.0;
-                var curStep = Math.max(customSettingsObj.animationstep, 0.0);
-                var circ = Math.PI * 2;
-                var quart = Math.PI / 2;
-                var type = '';
-                var fireCallback = true;
-                var additionalAngelPI = (customSettingsObj.startdegree / 180) * Math.PI;
-    
-                if ($(this).data('type') != undefined) {
-                    type = $(this).data('type');
-    
-                    if (type == 'half') {
-                        startAngle = 2.0 * Math.PI;
-                        endAngle = 3.13;
-                        circ = Math.PI;
-                        quart = Math.PI / 0.996;
-                    }
-                }
-              
-                /**
-                 * adds text to circle
-                 *
-                 * @param obj
-                 * @param cssClass
-                 * @param lineHeight
-                 */
-                function addCircleText(obj, cssClass, lineHeight) {
-                    $("<span></span>")
-                        .appendTo(obj)
-                        .addClass(cssClass)
-                        .text(text)
-                        .prepend(icon)
-                        .css({
-                            'line-height': lineHeight + 'px',
-                            'font-size': customSettingsObj.fontsize + 'px'
-                        });
-                }
-    
-                /**
-                 * adds info text to circle
-                 *
-                 * @param obj
-                 * @param factor
-                 */
-                function addInfoText(obj, factor) {
-                    $('<span></span>')
-                        .appendTo(obj)
-                        .addClass('circle-info-half')
-                        .css(
-                            'line-height', (customSettingsObj.dimension * factor) + 'px'
-                        )
-                        .text(info);
-                }
-    
-                /**
-                 * checks which data attributes are defined
-                 * @param obj
-                 */
-                function checkDataAttributes(obj) {
-                    $.each(customSettings, function (index, attribute) {
-                        if (obj.data(attribute) != undefined) {
-                            customSettingsObj[attribute] = obj.data(attribute);
-                        } else {
-                            customSettingsObj[attribute] = $(settings).attr(attribute);
-                        }
-    
-                        if (attribute == 'fill' && obj.data('fill') != undefined) {
-                            fill = true;
-                        }
-                    });
-                }
-    
-                /**
-                 * animate foreground circle
-                 * @param current
-                 */
-                function animate(current) {
-    
-                    context.clearRect(0, 0, canvas.width, canvas.height);
-    
-                    context.beginPath();
-                    context.arc(x, y, radius, endAngle, startAngle, false);
-    
-                    context.lineWidth = customSettingsObj.bordersize + 1;
-    
-                    context.strokeStyle = customSettingsObj.bgcolor;
-                    context.stroke();
-    
-                    if (fill) {
-                        context.fillStyle = customSettingsObj.fill;
-                        context.fill();
-                    }
-    
-                    context.beginPath();
-                    context.arc(x, y, radius, -(quart) + additionalAngelPI, ((circ) * current) - quart + additionalAngelPI, false);
-    
-                    if (customSettingsObj.border == 'outline') {
-                        context.lineWidth = customSettingsObj.width + 13;
-                    } else if (customSettingsObj.border == 'inline') {
-                        context.lineWidth = customSettingsObj.width - 13;
-                    }
-    
-                    context.strokeStyle = customSettingsObj.fgcolor;
-                    context.stroke();
-    
-                    if (curPerc < endPercent) {
-                        curPerc += curStep;
-                        requestAnimationFrame(function () {
-                            animate(Math.min(curPerc, endPercent) / 100);
-                        }, obj);
-                    }
-    
-                    if (curPerc == endPercent && fireCallback && typeof(options) != "undefined") {
-                        if ($.isFunction(options.complete)) {
-                            options.complete();
-    
-                            fireCallback = false;
-                        }
-                    }
-                }
-    
-                animate(curPerc / 100);
-    
-            });
-        };
-    }(jQuery));
 </script>
+
+</html>
