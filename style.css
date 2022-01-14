@@ -70,10 +70,11 @@ a {
 #page1 {background: LightBlue;}
 #page2 {background: MediumSpringGreen;}
 #page3 {background: SlateGray;}
+#page4 {background: rgb(37, 216, 148);}
 
 footer {
-  min-height: 200px;
-  padding: 100px;
+  min-height: 20px;
+
 }
 footer p {
   -webkit-column-count: 2;
